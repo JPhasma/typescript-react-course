@@ -1,4 +1,5 @@
 import './App.css';
+import { Status } from './components/Status';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/Personlist';
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Status status='loading' />
       <h1>REACT | TYPESCRIPT</h1>
       <Greet name={'Jane'} messageCount={20} isLoggedIn={false} />
       <Person name={personName} />
