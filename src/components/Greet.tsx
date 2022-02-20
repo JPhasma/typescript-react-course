@@ -1,6 +1,6 @@
 type GreetProps = {
   name: string;
-  messageCount: number;
+  messageCount?: number; // means this prop type is optional and can be ommitted
   isLoggedIn: boolean;
 };
 
