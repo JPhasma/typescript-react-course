@@ -4,6 +4,7 @@ import { Heading } from './components/Heading';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/Personlist';
+import { Button } from './components/Button';
 
 function App() {
   const personName = {
@@ -24,9 +25,14 @@ function App() {
       <Status status='loading' />
       <Heading>Placeholder text</Heading>
       <h1>REACT | TYPESCRIPT</h1>
-      <Greet name={'Jane'} messageCount={20} isLoggedIn={false} />
+      <Greet name={'Jane'} messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
+      <Button
+        handleClick={(event) => {
+          console.log('Button clicked', event);
+        }}
+      />
     </div>
   );
 }
