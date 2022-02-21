@@ -6,6 +6,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/Personlist';
 import { Button } from './components/Button';
 import { Input } from './components/Input';
+import { Container } from './components/Container';
 
 function App() {
   const personName = {
@@ -28,6 +29,13 @@ function App() {
       <h1>REACT | TYPESCRIPT</h1>
       <Greet name={'Jane'} messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
+      <Container
+        styles={{
+          border: '1px solid black',
+          padding: '1rem',
+          margin: '2rem 0',
+        }}
+      ></Container>
       <PersonList names={nameList} />
       <Input
         value=''
